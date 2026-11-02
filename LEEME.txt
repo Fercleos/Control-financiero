@@ -1,0 +1,16 @@
+MI CONTROL FINANCIERO — PROTOTIPO PWA
+
+Incluye:
+- Presupuesto mensual inicial de 1.300 EUR.
+- Gasto inicial registrado de 220,72 EUR (compra del 30/10 y gasolina del 1/11).
+- Previsión inicial de 4 compras semanales a 200 EUR.
+- Registro de gastos, categoría, fecha de compra y fecha de cargo de tarjeta.
+- Historial con eliminación de movimientos.
+- Cálculo dinámico de margen diario y reserva de compras.
+- Almacenamiento local en el navegador y caché offline mediante service worker.
+
+IMPORTANTE:
+Esta versión guarda los datos en el navegador/dispositivo. No sincroniza entre móviles ni tiene copia en la nube.
+Para instalarla como PWA debe publicarse en un hosting HTTPS (por ejemplo GitHub Pages). Después, abre la URL en Chrome Android y usa el menú > Instalar aplicación / Añadir a pantalla de inicio.
+
+Para activar sincronización entre dispositivos habrá que conectar una base de datos online y configurar autenticación y permisos. No introduzcas datos bancarios sensibles en esta versión.
