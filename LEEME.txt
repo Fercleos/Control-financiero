@@ -14,3 +14,5 @@ Esta versión guarda los datos en el navegador/dispositivo. No sincroniza entre 
 Para instalarla como PWA debe publicarse en un hosting HTTPS (por ejemplo GitHub Pages). Después, abre la URL en Chrome Android y usa el menú > Instalar aplicación / Añadir a pantalla de inicio.
 
 Para activar sincronización entre dispositivos habrá que conectar una base de datos online y configurar autenticación y permisos. No introduzcas datos bancarios sensibles en esta versión.
+
+Actualización de publicación
