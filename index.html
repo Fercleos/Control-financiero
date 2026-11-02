@@ -44,7 +44,7 @@ el('purchaseDate').value=new Date().toISOString().slice(0,10);const themeKey='mi
 let installPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;el('installBox').style.display='block'});el('installBtn').addEventListener('click',async()=>{if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;el('installBox').style.display='none'});if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
 
 /* Extensión: presupuesto mensual, recibos y hucha */
-state.income=state.income??2412.55;state.bank=state.bank??1158;state.owed=state.owed??200;state.savings=state.savings??1000;state.savingsMoves=state.savingsMoves||[];state.budget=1305.55;
+state.income=state.income??2412.55;state.bank=state.bank??1158;state.owed=state.owed??200;state.savings=state.savings??1000;state.savingsMoves=state.savingsMoves||[];if(!state.financialSetup){state.budget=1305.55;state.financialSetup=true;localStorage.setItem('mi-control-financiero-v1',JSON.stringify(state))}
 state.fixed=state.fixed||[
 {id:'insurance',name:'Seguros',amount:77,status:'paid'},
 {id:'ocaso',name:'Ocaso',amount:29,status:'paid'},
